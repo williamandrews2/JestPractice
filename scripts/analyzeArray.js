@@ -1,4 +1,8 @@
 export function analyzeArray(array) {
+  if (array.length === 0) {
+    return null;
+  }
+
   const size = array.length;
   let average;
   let min = Math.min(...array);
